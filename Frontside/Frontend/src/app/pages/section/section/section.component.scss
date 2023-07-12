@@ -16,7 +16,7 @@
   justify-content: space-around;
 }
 
-img {
+.img-container img {
   margin: 0 50px;
   width: 264px;
   height: 264px;
@@ -45,3 +45,23 @@ img {
 .button:hover {
   color: red;
 }
+.armin-presentation-img-txt-container {
+  background-color: white;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.armin-presentation-img {
+  float: left;
+  width: 40%;
+  height: auto;
+  margin-right: 20px;
+}
+
+.armin-presentation-txt {
+  font-family: 'Montserrat', sans-serif;
+  line-height: 2.5;
+  color: gray;
+  margin-right: 80px;
+}
+
