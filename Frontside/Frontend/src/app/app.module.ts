@@ -7,6 +7,8 @@ import { NavComponent } from './shared/nav/nav.component';
 import { HomeComponent } from './pages/home.component';
 import { HeaderComponent } from './pages/header/header/header.component';
 import { SectionComponent } from './pages/section/section/section.component';
+import { RouterModule, Routes} from '@angular/router';
+import { ContactComponent } from './pages/contact/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -15,10 +17,12 @@ import { SectionComponent } from './pages/section/section/section.component';
     HomeComponent,
     HeaderComponent,
     SectionComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    RouterModule.forRoot([]),
   ],
   providers: [],
   bootstrap: [AppComponent]

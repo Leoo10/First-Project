@@ -1,6 +1,6 @@
 #navbar-container {
   background-color: rgb(34, 33, 33);
-  padding: 0 20px; /* Add left and right padding */
+  padding: 0 12px; /* Add left and right padding */
   margin-top: 10px;
 }
 
@@ -22,8 +22,8 @@ li a {
   color: white;
   font-family: 'Montserrat';
   font-weight: 600;
-  font-size: 17px;
-  padding: 8px;
+  font-size: 15px;
+  padding-right: 3px;
 }
 
 li a:hover {
@@ -37,5 +37,14 @@ li a:hover {
 
 .logo-item img {
   display: block;
-  margin: 0 auto; /* Alinea horizontalmente la imagen en el centro */
+  margin: 0 auto;
+}
+.auth-container {
+  background-color: white;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+}
+.auth-container > a {
+  color: gray;
 }
