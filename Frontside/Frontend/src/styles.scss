@@ -1,0 +1,16 @@
+/* styles.scss */
+
+/* Establecer fondo negro para todo el documento */
+body, html {
+  background-color: rgb(34, 33, 33);
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos adicionales específicos de la aplicación */
+app-root,
+app-nav {
+  background-color: black;
+  color: white;
+}
