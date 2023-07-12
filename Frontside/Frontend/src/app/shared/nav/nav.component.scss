@@ -1,0 +1,41 @@
+#navbar-container {
+  background-color: rgb(34, 33, 33);
+  padding: 0 20px; /* Add left and right padding */
+  margin-top: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  margin: 0;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: 600;
+  font-size: 17px;
+  padding: 8px;
+}
+
+li a:hover {
+  color: red;
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+}
+
+.logo-item img {
+  display: block;
+  margin: 0 auto; /* Alinea horizontalmente la imagen en el centro */
+}
