@@ -40,11 +40,17 @@ li a:hover {
   margin: 0 auto;
 }
 .auth-container {
-  background-color: white;
+  background-color: rgb(86, 84, 84);
   padding: 10px;
   border-radius: 6px;
   display: flex;
 }
 .auth-container > a {
-  color: gray;
+  color: white;
+}
+.auth-container > a:hover {
+  color: white;
+}
+.auth-container:hover {
+  background-color: rgb(97, 97, 97);
 }

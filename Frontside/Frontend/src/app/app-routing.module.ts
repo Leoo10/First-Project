@@ -4,8 +4,8 @@ import { HomeComponent } from './pages/home.component';
 import { ContactComponent } from './pages/contact/contact/contact.component';
 
 const routes: Routes = [
-  { path: '' , pathMatch: 'full', component: HomeComponent},
-  { path: 'CONTACT', component: ContactComponent},
+  { path: 'Home' , pathMatch: 'full', component: HomeComponent},
+  { path: 'Contact', component: ContactComponent},
 ];
 
 @NgModule({

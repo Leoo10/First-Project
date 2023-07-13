@@ -1,0 +1,33 @@
+#footer-container {
+  background-color: black;
+  text-align: center;
+  padding: 50px;
+  font-family: 'Monserrat', sans-serif;
+  font-size: 60px;
+}
+
+#footer-container  i {
+  font-size: 30px;
+}
+
+.link-icon-container {
+  margin-top: 40px;
+  padding: 0px;
+}
+
+.link-icon-container i {
+  border: 2px solid white;
+  margin: 0px;
+  padding: 31px;
+  width: 30px;
+  height: 30px;
+}
+
+.link-icon-container i:hover {
+  background-color: white;
+  color: black;
+}
+
+.link-icon-container a {
+  color: white;
+}
