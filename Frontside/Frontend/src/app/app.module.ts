@@ -9,6 +9,7 @@ import { HeaderComponent } from './pages/header/header/header.component';
 import { SectionComponent } from './pages/section/section/section.component';
 import { RouterModule, Routes} from '@angular/router';
 import { ContactComponent } from './pages/contact/contact/contact.component';
+import { FooterComponent } from './pages/footer/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +19,7 @@ import { ContactComponent } from './pages/contact/contact/contact.component';
     HeaderComponent,
     SectionComponent,
     ContactComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
