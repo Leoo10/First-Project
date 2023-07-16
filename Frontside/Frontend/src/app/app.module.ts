@@ -10,6 +10,9 @@ import { SectionComponent } from './pages/section/section/section.component';
 import { RouterModule, Routes} from '@angular/router';
 import { ContactComponent } from './pages/contact/contact/contact.component';
 import { FooterComponent } from './pages/footer/footer/footer.component';
+import { LoginComponent } from './auth/login/login/login.component';
+import { RegisterComponent } from './auth/register/register/register.component';
+import { FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -20,10 +23,13 @@ import { FooterComponent } from './pages/footer/footer/footer.component';
     SectionComponent,
     ContactComponent,
     FooterComponent,
+    LoginComponent,
+    RegisterComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     RouterModule.forRoot([]),
   ],
   providers: [],

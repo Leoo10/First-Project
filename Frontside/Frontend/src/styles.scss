@@ -1,6 +1,8 @@
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 /* styles.scss */
-
+* {
+  font-family: 'Montserrat', sans-serif;
+}
 /* Establecer fondo negro para todo el documento */
 body, html {
   background-color: rgb(34, 33, 33);

@@ -65,3 +65,62 @@
   margin-right: 80px;
 }
 
+/* Estilos para el formulario */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+textarea {
+  margin-bottom: 30px;
+}
+
+button {
+  background-color: #07810b;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  display: block;
+  margin: auto;
+  margin-bottom: 50px;
+  font-weight: bold;
+  padding: 15px;
+  width: 100px;
+  text-align: center;
+  font-size: 15px;
+  transition: background-color 0.6s ease-in-out;
+}
+
+
+button:hover {
+  background-color: #096f0e;
+}
+
+.form-container {
+  margin-top: 40px;
+  position: relative;
+}
+#contact-title {
+  text-align: center;
+  font-size: 30px;
+}

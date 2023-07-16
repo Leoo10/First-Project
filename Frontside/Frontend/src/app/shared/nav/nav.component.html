@@ -8,9 +8,10 @@
     <li><a routerLink="/Videos">VIDEOS</a></li>
     <li><a routerLink="/AStateOfTrance">A STATE OF TRANCE</a></li>
     <li><a routerLink="/Shop">SHOP</a></li>
-    <li><a routerLink="/Contact">CONTACT</a></li>
     <li><a routerLink="/Armin'sALL-access">ARMIN'S ALL-ACCESS</a></li>
-    <li class="auth-container"><a routerLink="/login">LOGIN</a></li>
-    <li class="auth-container"><a routerLink="/register">REGISTER</a></li>
+  <li class="auth-container"><a routerLink="/Home" (click)="openLoginModal()">LOGIN</a></li>
+    <li class="auth-container"><a routerLink="/register" (click)="openRegisterModal()">REGISTER</a></li>
   </ul>
 </nav>
+<div #modalContainer></div>
+<div #modalContainer2></div>
