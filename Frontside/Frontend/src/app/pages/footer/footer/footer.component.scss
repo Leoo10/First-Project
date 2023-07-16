@@ -8,11 +8,13 @@
 
 #footer-container  i {
   font-size: 30px;
+  transition: color 1s ease-in-out;
 }
 
 .link-icon-container {
   margin-top: 40px;
   padding: 0px;
+  transition: background-color 1s ease-in-out;
 }
 
 .link-icon-container i {
