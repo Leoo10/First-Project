@@ -8,11 +8,12 @@ import { HomeComponent } from './pages/home.component';
 import { HeaderComponent } from './pages/header/header/header.component';
 import { SectionComponent } from './pages/section/section/section.component';
 import { RouterModule, Routes} from '@angular/router';
-import { ContactComponent } from './pages/contact/contact/contact.component';
 import { FooterComponent } from './pages/footer/footer/footer.component';
 import { LoginComponent } from './auth/login/login/login.component';
 import { RegisterComponent } from './auth/register/register/register.component';
 import { FormsModule} from '@angular/forms';
+import { AStateOfTranceComponent } from './pages/aStateOfTrance/a-state-of-trance/a-state-of-trance.component';
+import { BiographyComponent } from './pages/biography/biography/biography.component';
 
 @NgModule({
   declarations: [
@@ -21,10 +22,11 @@ import { FormsModule} from '@angular/forms';
     HomeComponent,
     HeaderComponent,
     SectionComponent,
-    ContactComponent,
     FooterComponent,
     LoginComponent,
     RegisterComponent,
+    AStateOfTranceComponent,
+    BiographyComponent,
   ],
   imports: [
     BrowserModule,

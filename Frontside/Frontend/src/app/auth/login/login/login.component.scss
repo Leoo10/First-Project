@@ -37,6 +37,7 @@ button {
   color: white;
   font-weight: bold;
   transition: background-color 0.6s ease-in-out;
+  cursor: pointer;
 }
 button:hover {
   background-color: rgb(6, 112, 6);
@@ -52,3 +53,57 @@ button:active {
 .form-group input:last-child {
   margin-bottom: 30px;
 }
+.forgot-password {
+  margin-top: 20px;
+}
+.forgot-password span {
+  color: white;
+  font-weight: bold;
+  position: relative;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 0.6s;
+  transition-timing-function: ease-out;
+  cursor: pointer;
+}
+.forgot-password span:hover {
+  color: rgb(177, 176, 176);
+}
+.forgot-password-window {
+  position: absolute;
+  top: 110%;
+  background-color: rgb(34, 33, 33);
+  padding: 20px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.forgot-password-window label {
+  font-weight: bold;
+}
+.forgot-password-window input  {
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+}
+.forgot-password-window label input button{
+  width: 100%;
+}
+.forgot-password-window button {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 8px;
+  font-size: 16px;
+  width: 150px;
+  margin-top: 25px;
+  transition: background-color 0.6s ease-in-out;
+}
+
+.forgot-password-window button:hover {
+  background-color: rgb(6, 112, 6);
+}
+
