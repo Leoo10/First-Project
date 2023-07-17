@@ -12,5 +12,15 @@
       </div>
       <button type="submit">Login</button>
     </form>
+    <div class="forgot-password" (click)="onForgotPassword()">
+      <span>Forgot your password?</span>
+    </div>
+      <div *ngIf="showForgotPasswordWindow" class="forgot-password-window">
+      <form>
+        <label for="recoverEmeail">Introduce here your email to recover your password</label>
+        <input type="email" id="recoverEmeail" placeholder="P.J leocuestas100@gmail.com" required>
+        <button type="submit">Retrieve new Password</button>
+      </form>
+    </div>
+    </div>
   </div>
-</div>

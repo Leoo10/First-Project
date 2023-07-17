@@ -11,8 +11,14 @@ export class LoginComponent {
     password: ''
   };
 
+  showForgotPasswordWindow = false;
+
   onLogin() {
-    this.loginData.email = '';
-    this.loginData.password = '';
+    // Perform login logic here
+    // Access the entered email and password using this.loginData.email and this.loginData.password
+    // You can make an API call or implement your login logic accordingly
+  }
+  onForgotPassword() {
+    this.showForgotPasswordWindow = !this.showForgotPasswordWindow;
   }
 }
