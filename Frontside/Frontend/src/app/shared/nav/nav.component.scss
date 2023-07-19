@@ -30,6 +30,9 @@ li a {
 li a:hover {
   color: red;
 }
+li a:focus {
+  border-bottom: 2px solid red;
+}
 
 .logo-item {
   display: flex;
