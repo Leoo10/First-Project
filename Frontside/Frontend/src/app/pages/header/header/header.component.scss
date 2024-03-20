@@ -3,4 +3,11 @@
   margin-left: auto;
   margin-right: auto;
   margin-top: 10px;
+  width: 100%;
 }
+#header-container {
+  z-index: 1; /* Set a lower z-index value than the menu */
+  background-color: rgb(34, 33, 33);
+  padding: 12px;
+}
+

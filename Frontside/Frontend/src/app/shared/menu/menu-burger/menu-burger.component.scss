@@ -1,0 +1,110 @@
+/* Common styles for both desktop and mobile */
+.menu {
+  background-color: rgb(56, 55, 55);
+  padding: 12px;
+  z-index: 1;
+  box-shadow: inset black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+  font-family: 'Montserrat';
+  font-weight: bold;
+  font-size: 15px;
+  padding: 8px 12px;
+  display: block;
+  transition: color 0.6s ease-in-out;
+}
+
+.menu a:hover {
+  color: red;
+}
+
+.logo-item {
+  display: flex;
+  align-items: center;
+}
+
+.logo-item img {
+  display: block;
+  margin: 0 auto;
+  width: 100px; /* Adjust the width as needed */
+  height: auto;
+}
+
+.auth-container {
+  border: 3px solid white;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  transition: background-color, border 0.6s ease-in-out;
+  margin: 20px;
+}
+
+.auth-container a {
+  color: white;
+  transition: color 0.6s ease-in-out;
+}
+
+.auth-container a:hover {
+  color: white;
+}
+
+.auth-container:hover {
+  background-color: red;
+  border: 3px solid red;
+}
+
+div#modal {
+  width: 300px;
+  height: 1000px;
+}
+
+/* Styles for the burger menu when it is open */
+.menu.open ul {
+  display: flex;
+  flex-direction: column; /* Change the direction to column to stack the elements */
+}
+
+.menu.open li {
+  margin-bottom: 10px;
+}
+
+/* Hide the menu when it is not open */
+.menu.menu-hidden ul {
+  display: none;
+}
+
+/* Responsive Styles for Tablet */
+@media screen and (max-width: 768px) {
+  .menu {
+    padding: 8px; /* Adjust the padding for smaller screens */
+  }
+
+  .menu a {
+    font-size: 13px; /* Adjust the font size for smaller screens */
+  }
+
+  .auth-container {
+    padding: 8px; /* Adjust the padding for smaller screens */
+  }
+}
+
+/* Responsive Styles for Mobile */
+@media screen and (max-width: 576px) {
+  .menu {
+    padding: 6px; /* Adjust the padding for smaller screens */
+  }
+
+  .menu a {
+    font-size: 12px; /* Adjust the font size for smaller screens */
+    padding: 6px 10px; /* Adjust the padding for smaller screens */
+  }
+
+  .auth-container {
+    padding: 6px; /* Adjust the padding for smaller screens */
+  }
+}

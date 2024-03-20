@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./a-state-of-trance.component.scss']
 })
 export class AStateOfTranceComponent {
-
+ aStateOfTrance_button_href: string = 'https://enter.astateoftrance.com/'
 }

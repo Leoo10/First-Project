@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./biography.component.scss']
 })
 export class BiographyComponent {
-
+  biography_img: string = 'https://weraveyou.com/wp-content/uploads/2022/06/Armin-van-Buuren-Nature-3-by-SNDR.jpg';
 }

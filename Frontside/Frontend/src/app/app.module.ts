@@ -14,6 +14,15 @@ import { RegisterComponent } from './auth/register/register/register.component';
 import { FormsModule} from '@angular/forms';
 import { AStateOfTranceComponent } from './pages/aStateOfTrance/a-state-of-trance/a-state-of-trance.component';
 import { BiographyComponent } from './pages/biography/biography/biography.component';
+import { VideosComponent } from './pages/videos/videos/videos.component';
+import { ShopComponent } from './pages/shop/shop/shop.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
+import { MenuBurgerComponent } from './shared/menu/menu-burger/menu-burger.component';
+
+
 
 @NgModule({
   declarations: [
@@ -27,12 +36,19 @@ import { BiographyComponent } from './pages/biography/biography/biography.compon
     RegisterComponent,
     AStateOfTranceComponent,
     BiographyComponent,
+    VideosComponent,
+    ShopComponent,
+    MenuBurgerComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
     RouterModule.forRoot([]),
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatButtonModule,
+    MatIconModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

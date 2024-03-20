@@ -18,10 +18,11 @@ To get started with the project, please follow these steps:
 5. Then, switch back to your branch and execute: <git merge main>
 6. Next, you need to set up Angular. Firstly, install Angular CLI by running the following command: <npm install -g @angular/cli>
 7. Before running my project, you'll also need to install Font Awesome. Execute the following command: <npm install @fortawesome/fontawesome-free>
-8. Navigate to the "Frontend" directory in the project, where you'll find the "script.ts" file. To deploy my application, use the command: <ng serve -o>
-9. Now, let's set up Django. Make sure you have Node.js installed. Install Django by executing the following command: <pip install django>
-10. Navigate to the project directory and run the following command to start the Django server: <python manage.py runserver>
-11. Before executing this command, ensure that the folder you're in contains the "manage.py" file.
+8. Before running my project you need to install angular materials, what I'm using for the menu <npm install @angular/material @angular/cdk>
+9. Navigate to the "Frontend" directory in the project, where you'll find the "script.ts" file. To deploy my application, use the command: <ng serve -o>
+10. Now, let's set up Django. Make sure you have Node.js installed. Install Django by executing the following command: <pip install django>
+11. Navigate to the project directory and run the following command to start the Django server: <python manage.py runserver>
+12. Before executing this command, ensure that the folder you're in contains the "manage.py" file.
 
 # Usage
 

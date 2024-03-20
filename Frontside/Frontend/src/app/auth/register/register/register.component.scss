@@ -1,13 +1,13 @@
 #modal {
   display: inline-block;
-  background-color:  rgb(34, 33, 33);
+  background-color:  rgb(58, 55, 55);
   padding: 30px;
   width: 300px;
   position: absolute;
-  top: 80%;
+  top: 78%;
   left: 50%;
   transform: translate(-50%, -50%);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 #modal-content h2{
   margin: 20px;
@@ -16,7 +16,7 @@
 }
 .form-group label, input {
   color: white;
-  margin: 20px;
+margin: 20px;
   width: 50%;
   display: block;
   margin: auto;
@@ -52,4 +52,7 @@ button:active {
 }
 .form-group input:last-child {
   margin-bottom: 30px;
+}
+@media only screen and (max-width: 200px) {
+
 }
