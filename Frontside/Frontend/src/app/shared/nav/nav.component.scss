@@ -1,10 +1,12 @@
 #navbar-container {
   background-color: rgb(34, 33, 33);
   padding: 0 12px; /* Add left and right padding */
-  margin-top: 10px;
+  position: relative; /* Add relative positioning */
+  z-index: 1; /* Set a higher z-index value than the header container */
+  margin: 0;
 }
 
-ul {
+#navbar-container ul {
   list-style-type: none;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -15,9 +17,7 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
-
-
-li a {
+#navbar-container li a {
   text-decoration: none;
   color: white;
   font-family: 'Montserrat';
@@ -26,14 +26,12 @@ li a {
   padding-right: 3px;
   transition: color 0.6s ease-in-out;
 }
-
-li a:hover {
+#navbar-container li a:hover {
   color: red;
 }
-li a:focus {
-  border-bottom: 2px solid red;
+#navbar-container li a:focus {
+  color: red;
 }
-
 .logo-item {
   display: flex;
   align-items: center;
@@ -44,25 +42,57 @@ li a:focus {
   margin: 0 auto;
 }
 .auth-container {
-  background-color: black;
+  border: 3px solid white;
   padding: 10px;
   border-radius: 6px;
   display: flex;
-  transition: background-color 0.6s ease-in-out;
+  transition: background-color, border 0.6s ease-in-out;
+  z-index: 2;
 }
-.auth-container > a {
-  color: white;
+.auth-container a {
+  color: white !important;
+  transition: color 0.6s ease-in-out;
 }
-.auth-container > a:hover {
-  color: white;
+.auth-container a:hover {
+  color: white !important;
 }
 .auth-container:hover {
-  background-color: rgb(25, 24, 24);
+  background-color: red;
+  border: 3px solid red;
 }
 .login-modal-container2 {
   position: fixed;
-  top: 50%;
+  top: 400%; /* Adjust the value as needed to move the content down */
   right: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 9999; /* Adjust the z-index value as needed */
+  transform: translate(50%, -50%);
+  z-index: 9999;
+}
+
+
+.menu-icon {
+  display: none; /* Hide the menu icon by default */
+}
+.menu-icon button {
+  background-color: rgb(34, 33, 33);
+  border: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+@media screen and (max-width: 1080px) {
+  /* Show the menu icon on screens with width up to 768px (tablets and cellphones) */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Hide the horizontal navbar on small screens */
+  #navbar-container .list-item{
+    display: none;
+  }
+  .auth-container {
+    display: none;
+  }
+}
+#navbar-container {
+  height: 50px;
 }

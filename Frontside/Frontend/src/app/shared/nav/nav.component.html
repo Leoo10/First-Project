@@ -1,17 +1,24 @@
 <nav id="navbar-container">
   <ul>
-    <li class="logo-item"><a routerLink="/Home"><img src="assets/img/armin-logo.jpg" alt="Armin Logo"></a></li>
-    <li><a routerLink="/TourDates">TOUR DATES</a></li>
-    <li><a routerLink="/News">NEWS</a></li>
-    <li><a routerLink="/Music">MUSIC</a></li>
-    <li><a routerLink="/Biography">BIOGRAPHY</a></li>
-    <li><a routerLink="/Videos">VIDEOS</a></li>
-    <li><a routerLink="/AStateOfTrance">A STATE OF TRANCE</a></li>
-    <li><a routerLink="/Shop">SHOP</a></li>
-    <li><a routerLink="/Armin'sALL-access">ARMIN'S ALL-ACCESS</a></li>
-  <li class="auth-container"><a routerLink="/Home" (click)="openLoginModal()">LOGIN</a></li>
+    <li class="menu-icon"><button (click)="toggleMenu()">☰</button>
+      <app-menu-burger *ngIf="isMenuOpen"></app-menu-burger>
+    </li>
+    <!-- Logo -->
+    <li class="logo-item list-item"><a routerLink="/Home"><img [src]="logo_item" alt="Armin Logo"></a></li>
+    <!-- Regular Menu Items -->
+    <li class="list-item"><a routerLink="/TourDates" routerLinkActive="active">TOUR DATES</a></li>
+    <li class="list-item"><a routerLink="/News" routerLinkActive="active">NEWS</a></li>
+    <li class="list-item"><a routerLink="/Music" routerLinkActive="active">MUSIC</a></li>
+    <li class="list-item"><a routerLink="/Biography" routerLinkActive="active">BIOGRAPHY</a></li>
+    <li class="list-item"><a routerLink="/Videos" routerLinkActive="active">VIDEOS</a></li>
+    <li class="list-item"><a routerLink="/AStateOfTrance" routerLinkActive="active">A STATE OF TRANCE</a></li>
+    <li class="list-item"><a routerLink="/Shop" routerLinkActive="active">SHOP</a></li>
+    <li class="list-item"><a routerLink="/Armin'sALL-access" routerLinkActive="active">ARMIN'S ALL-ACCESS</a></li>
+    <!-- Authentication -->
+    <li class="auth-container"><a routerLink="/Home" (click)="openLoginModal()">LOGIN</a></li>
     <li class="auth-container"><a routerLink="/register" (click)="openRegisterModal()">REGISTER</a></li>
   </ul>
 </nav>
-<div #modalContainer></div>
-<div #modalContainer2></div>
+<div #modalContainer class="modal-container"></div>
+<div #modalContainer2 class="modal-container"></div>
+

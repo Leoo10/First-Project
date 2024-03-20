@@ -1,0 +1,45 @@
+<!-- menu-burger.component.html -->
+<div class="menu" (click)="toggleMenu()">
+  <!-- Logo -->
+  <li class="logo-item list-item">
+    <a routerLink="/Home">
+      <img [src]="logo_item" alt="Armin Logo">
+    </a>
+  </li>
+
+  <!-- Regular Menu Items -->
+  <li class="list-item">
+    <a routerLink="/TourDates" routerLinkActive="active">TOUR DATES</a>
+  </li>
+  <li class="list-item">
+    <a routerLink="/News" routerLinkActive="active">NEWS</a>
+  </li>
+  <li class="list-item">
+    <a routerLink="/Music" routerLinkActive="active">MUSIC</a>
+  </li>
+  <li class="list-item">
+    <a routerLink="/Biography" routerLinkActive="active">BIOGRAPHY</a>
+  </li>
+  <li class="list-item">
+    <a routerLink="/Videos" routerLinkActive="active">VIDEOS</a>
+  </li>
+  <li class="list-item">
+    <a routerLink="/AStateOfTrance" routerLinkActive="active">A STATE OF TRANCE</a>
+  </li>
+  <li class="list-item">
+    <a routerLink="/Shop" routerLinkActive="active">SHOP</a>
+  </li>
+  <li class="list-item">
+    <a routerLink="/Armin'sALL-access" routerLinkActive="active">ARMIN'S ALL-ACCESS</a>
+  </li>
+
+  <!-- Authentication -->
+  <li class="auth-container">
+    <a routerLink="/Home" (click)="openLoginModal()">LOGIN</a>
+  </li>
+  <li class="auth-container">
+    <a routerLink="/register" (click)="openRegisterModal()">REGISTER</a>
+  </li>
+</div>
+<div class="modal-content" #modalContainer></div>
+<div class="modal-content" #modalContainer2></div>

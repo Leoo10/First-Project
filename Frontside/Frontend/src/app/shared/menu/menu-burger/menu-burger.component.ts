@@ -1,19 +1,25 @@
 import { Component, ViewChild, ViewContainerRef, ComponentRef } from '@angular/core';
 import { LoginComponent } from 'src/app/auth/login/login/login.component';
 import { RegisterComponent } from 'src/app/auth/register/register/register.component';
-import { BreakpointObserver, Breakpoints } from '@angular/cdk/layout';
 
 @Component({
-  selector: 'app-nav',
-  templateUrl: './nav.component.html',
-  styleUrls: ['./nav.component.scss']
+  selector: 'app-menu-burger',
+  templateUrl: './menu-burger.component.html',
+  styleUrls: ['./menu-burger.component.scss']
 })
-export class NavComponent {
+export class MenuBurgerComponent {
+  isOpen: boolean = false;
+
+  toggleMenu() {
+    this.isOpen = !this.isOpen;
+}
 
   @ViewChild('modalContainer', { read: ViewContainerRef }) modalContainer!: ViewContainerRef;
   @ViewChild('modalContainer2', { read: ViewContainerRef }) modalContainer2!: ViewContainerRef;
   loginComponentRef?: ComponentRef<LoginComponent>;
   registerComponentRef?: ComponentRef<RegisterComponent>;
+
+  constructor() {}
 
   openLoginModal() {
     if (this.loginComponentRef) {
@@ -34,21 +40,4 @@ export class NavComponent {
   }
 
   logo_item: string = 'assets/img/armin-logo.jpg';
-
-  isMenuOpen = false;
-  isSmallScreen = false;
-
-  constructor(private breakpointObserver: BreakpointObserver) {
-    this.breakpointObserver.observe([Breakpoints.Handset, Breakpoints.Tablet])
-      .subscribe(result => {
-        this.isSmallScreen = result.matches;
-      });
-  }
-
-  toggleMenu() {
-    this.isMenuOpen = !this.isMenuOpen;
-  }
-
-
-
 }
